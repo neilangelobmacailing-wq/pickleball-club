@@ -1,0 +1,19 @@
+{
+  "name": "dink-drive",
+  "version": "1.0.0",
+  "description": "Dink & Drive Pickleball Club – reservation & operations system",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "demo": "SEED_DEMO=1 node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0",
+    "express": "^4.21.2"
+  },
+  "license": "MIT"
+}

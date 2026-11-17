@@ -1,0 +1,121 @@
+/* ==========================================================
+   Dink & Drive – custom styles
+   (Most styling is done with Tailwind utility classes.)
+   ========================================================== */
+
+/* Print: only the official receipt prints */
+@media print {
+  body * {
+    visibility: hidden !important;
+  }
+  #receipt-modal,
+  #receipt-modal * {
+    visibility: visible !important;
+  }
+  #receipt-modal {
+    position: fixed !important;
+    inset: 0 !important;
+    background: white !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+  }
+  #receipt-print-actions {
+    display: none !important;
+  }
+}
+
+/* ---------- Shift roster (sidebar) ---------- */
+.sidebar-section {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  padding: 1.25rem;
+}
+
+.roster-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.roster-title {
+  margin: 0;
+  font-size: 13px;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.roster-add-btn {
+  background: #198754;
+  color: #fff;
+  border: none;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.roster-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+.roster-row:last-child {
+  border-bottom: none;
+}
+
+.roster-person {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.roster-controls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.roster-row .badge {
+  color: #fff;
+  padding: 3px 6px;
+  border-radius: 50%;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.roster-row strong {
+  font-size: 13px;
+  display: block;
+  line-height: 1.2;
+}
+
+.roster-row .role {
+  font-size: 11px;
+  color: #666;
+}
+
+.shift-time-select {
+  padding: 2px 4px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 11px;
+  background: #fff;
+}
+
+.roster-remove-btn {
+  background: transparent;
+  color: #dc3545;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0 4px;
+  line-height: 1;
+}
